@@ -1,0 +1,29 @@
+promise is used to handle asynchronous task and it has three state pending resolve and reject.
+promise is used to identify whether asynchronous task is sucessfully completed or not
+
+
+
+
+
+const ticket = new Promise(function (resolve, reject){
+    const boarded = false;
+    if(boarded){
+        resolve("congratulation")
+    }
+    else{
+        reject("your flight has got cancelled")
+    }
+})
+
+ticket.then((data) =>{
+    console.log("hey", data);
+}).catch((data) =>{
+    console.log("sorry", data);
+}).finally(()=>{
+console.log("always")
+})
+
+
+
+
+
