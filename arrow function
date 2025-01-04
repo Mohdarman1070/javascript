@@ -1,0 +1,17 @@
+//arrow function
+
+
+const a  = () =>{
+    console.log("arman siddiqui")
+}
+a();
+
+
+//this is used for single statement 
+const sqaure = (num) => num* num;
+console.log(sqaure(5))
+
+
+
+
+
